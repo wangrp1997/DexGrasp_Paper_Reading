@@ -1,14 +1,14 @@
 # Grasp as you say: Language-guided dexterous grasp generation
 
 ## 基本信息
-- **标题**：
-- **作者**：
-- **发表时间**：
-- **期刊/会议**：
-- **DOI**：
-- **引用次数**：
-- **论文链接**：
-- **代码/项目链接**：
+- **标题**：Grasp as you say: Language-guided dexterous grasp generation
+- **作者**：Yi-Lin Wei1, Jian-Jian Jiang1, Chengyi Xing2, Xian-Tuo Tan1, Xiao-Ming Wu1, Hao Li2, Mark Cutkosky2, Wei-Shi Zheng1,3
+- **发表时间**：2024
+- **期刊/会议**：arXiv
+- **DOI**：arXiv:2405.19291
+- **引用次数**：14
+- **论文链接**：https://arxiv.org/abs/2405.19291
+- **代码/项目链接**：https://isee-laboratory.github.io/DexGYS/
 
 ## 研究类型
 - [ ] 综述（Survey）
