@@ -38,13 +38,14 @@ update_csv() {
     
     # 如果CSV文件不存在，创建并添加表头
     if [ ! -f "$csv_file" ]; then
-        echo "title,authors,year,venue,doi,url,type,method_category,application,keywords,citations,has_code,code_url,dataset,platform,notes,status" > "$csv_file"
+        echo "title,authors,institution,year,venue,doi,url,type,method_category,application,keywords,citations,has_code,code_url,dataset,platform,notes,status" > "$csv_file"
     fi
     
     echo "请填写论文信息（直接回车跳过）："
     
     # 读取用户输入
     read -p "作者列表: " authors
+    read -p "单位: " institution
     read -p "发表年份: " year
     read -p "期刊/会议: " venue
     read -p "DOI: " doi
@@ -65,7 +66,7 @@ update_csv() {
     notes="${category_path#papers/}/${filename}.md"
     
     # 构建CSV行，确保所有字段都被双引号包围，并用逗号分隔
-    csv_line="\"$title\",\"$authors\",\"$year\",\"$venue\",\"$doi\",\"$url\",\"$type\",\"$method_category\",\"$application\",\"$keywords\",\"$citations\",\"$has_code\",\"$code_url\",\"$dataset\",\"$platform\",\"$note_url\",\"$status\""
+    csv_line="\"$title\",\"$authors\",\"$institution\",\"$year\",\"$venue\",\"$doi\",\"$url\",\"$type\",\"$method_category\",\"$application\",\"$keywords\",\"$citations\",\"$has_code\",\"$code_url\",\"$dataset\",\"$platform\",\"$note_url\",\"$status\""
     
     # 确保文件以换行符结尾
     if [ -s "$csv_file" ] && [ "$(tail -c 1 "$csv_file")" != "" ]; then
