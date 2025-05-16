@@ -1,5 +1,5 @@
-# DexGrasp_Paper_Reading
-灵巧抓取（Dexterous Grasping）文献综述项目
+# DexHand_Paper_Reading
+灵巧手（Dexterous Hand）文献综述项目
 
 ## 项目简介
 本项目旨在系统地收集、整理和分析灵巧抓取（Dexterous Grasping）领域的相关文献，包括但不限于：
