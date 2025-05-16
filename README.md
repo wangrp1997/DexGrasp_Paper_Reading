@@ -89,7 +89,6 @@ DexGrasp_Paper_Reading/
 1. 使用BibTeX管理参考文献
 2. 使用CSV文件记录论文元数据
 3. 使用Markdown格式编写阅读笔记
-   - 笔记与论文PDF文件存放在同一目录下
    - 使用`scripts/create_note.sh`脚本创建新笔记
    - 笔记模板位于`notes/templates/paper_template.md`
 4. 定期更新文献分类和总结
@@ -130,10 +129,9 @@ DexGrasp_Paper_Reading/
 ```
 
 ## 如何贡献
-1. 添加新的论文到相应目录
-2. 更新论文笔记
-3. 补充文献分类
-4. 提出改进建议
+1. 更新论文笔记
+2. 补充文献分类
+3. 提出改进建议
 
 ## 更新日志
 - 2025-05-16: 项目初始化，建立基本结构
