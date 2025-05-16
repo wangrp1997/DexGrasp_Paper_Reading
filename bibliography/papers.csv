@@ -1,2 +1,3 @@
 title,authors,year,venue,doi,url,type,method_category,application,keywords,citations,has_code,code_url,dataset,platform,notes,status
 "标题","作者列表","发表年份","期刊/会议","DOI","项目链接","研究类型(综述/方法/应用)","方法类别(学习/优化/控制)","应用领域","关键词","引用次数","是否有代码","代码链接","数据集","实验平台","阅读笔记链接","阅读状态(未读/在读/已读)"
+"Grasp as you say: Language-guided dexterous grasp generation","Wei et al.","2024","arXiv","arXiv:2405.19291","https://isee-laboratory.github.io/DexGYS/","method","learning","dexhand grasp","dexterous grasping, LLM-assisted","14","yes","https://github.com/iSEE-Laboratory/Grasp-as-You-Say","DexGYSNet","Rizon4 Arm, Allegro Hand","","reading"
