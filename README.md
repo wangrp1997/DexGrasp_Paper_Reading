@@ -1,4 +1,4 @@
-# DexHand_Paper_Reading
+# DexGrasp_Paper_Reading
 灵巧手（Dexterous Hand）文献综述项目
 
 ## 项目简介
