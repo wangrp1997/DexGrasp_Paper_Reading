@@ -1,10 +1,10 @@
 # **Task-Oriented** Dexterous Hand Pose Synthesis Using Differentiable Grasp Wrench Boundary Estimator
 
 ## 基本信息
-- **作者**：
-- **单位**：
-- **发表时间**：
-- **期刊/会议**：
+- **作者**：王鹤组
+- **单位**：北大
+- **发表时间**：2024
+- **期刊/会议**：IROS
 - **DOI**：
 - **引用次数**：
 - **论文链接**：
@@ -53,7 +53,7 @@ dexterous grasp synthesis pipeline is built upon **cuRobo** (CUDA Accelerated Ro
 - 对比分析：
 
 ### 局限性
-- 方法局限：
+- 方法局限：需要任务先验来预先制定这些参数：This approach can automatically synthesize task-oriented hand poses by simply providing an object mesh and defining a TWS, without requiring additional human demonstrations. 
 - 实验局限：
 - 应用局限：
 
