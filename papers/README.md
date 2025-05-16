@@ -52,10 +52,8 @@ papers/
 - 笔记文件：`标题.md`（使用`create_note.sh`脚本自动生成）
 
 ## 注意事项
-1. 每个论文目录下应包含：
-   - 论文PDF文件
+1. 每个论文目录下包含：
    - 阅读笔记（.md文件）
-   - 相关代码或数据（如果有）
 
 2. 使用`scripts/create_note.sh`脚本创建新笔记
 3. 及时更新`bibliography/papers.bib`和`bibliography/papers.csv` 

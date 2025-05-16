@@ -1,3 +1,2 @@
 title,authors,year,venue,doi,url,type,method_category,application,keywords,citations,has_code,code_url,dataset,platform,notes,status
 "标题","作者列表","发表年份","期刊/会议","DOI","项目链接","研究类型(综述/方法/应用)","方法类别(学习/优化/控制)","应用领域","关键词","引用次数","是否有代码","代码链接","数据集","实验平台","阅读笔记链接","阅读状态(未读/在读/已读)"
-"Dexterous Grasping: A Survey","liu","2012","conf","123.cn","123.cn","s","le","g","g","123","yes","www.123.vn","www.123.cn","isaaclab","123.cn","reading"
