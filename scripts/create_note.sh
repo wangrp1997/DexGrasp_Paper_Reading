@@ -31,6 +31,11 @@ get_category_path() {
     esac
 }
 
+# 生成文件名（将标题转换为小写，空格替换为下划线）
+generate_filename() {
+    echo "$1" | tr '[:upper:]' '[:lower:]' | tr ' ' '_' | tr -d ':' | tr -d ',' | tr -d '(' | tr -d ')' | tr -d '"' | tr -d "'"
+}
+
 # 更新CSV文件
 update_csv() {
     local title="$1"
@@ -134,15 +139,16 @@ read -p "请输入类别编号 (例如: 2.1): " category_choice
 # 获取类别路径
 category_path=$(get_category_path "$category_choice")
 
-# 确保目录存在
-mkdir -p "$category_path"
+# 生成文件名
+filename=$(generate_filename "$title")
 
-# 生成文件名（将标题转换为小写，空格替换为下划线）
-filename=$(echo "$title" | tr '[:upper:]' '[:lower:]' | tr ' ' '_' | tr -d ':' | tr -d ',')
+# 创建论文目录结构
+paper_dir="${category_path}/${filename}"
+mkdir -p "${paper_dir}/images"
 
 # 创建笔记文件
 template_file="notes/templates/paper_template.md"
-note_file="${category_path}/${filename}.md"
+note_file="${paper_dir}/${filename}.md"
 
 # 检查模板文件是否存在
 if [ ! -f "$template_file" ]; then
@@ -154,10 +160,19 @@ fi
 cp "$template_file" "$note_file"
 sed -i "1s/论文标题/$title/" "$note_file"
 
+echo "已创建论文目录: $paper_dir"
 echo "已创建笔记文件: $note_file"
+echo "已创建图片目录: ${paper_dir}/images"
 
 # 更新CSV和BibTeX文件
 update_csv "$title"
 update_bib
 
-echo "完成！请编辑笔记文件，填写论文信息。" 
+echo "完成！"
+echo "论文目录结构："
+echo "$paper_dir/"
+echo "├── ${filename}.md"
+echo "└── images/"
+echo ""
+echo "请编辑笔记文件，填写论文信息。"
+echo "图片请放置在 images/ 目录下。" 
