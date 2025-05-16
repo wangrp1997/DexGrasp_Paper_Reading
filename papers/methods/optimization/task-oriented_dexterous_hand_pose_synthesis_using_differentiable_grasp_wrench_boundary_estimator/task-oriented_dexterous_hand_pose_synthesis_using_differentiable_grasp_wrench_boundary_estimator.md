@@ -1,4 +1,4 @@
-# Task-Oriented Dexterous Hand Pose Synthesis Using Differentiable Grasp Wrench Boundary Estimator
+# **Task-Oriented** Dexterous Hand Pose Synthesis Using Differentiable Grasp Wrench Boundary Estimator
 
 ## 基本信息
 - **作者**：
@@ -20,7 +20,7 @@
     - [ ] 强化学习
     - [ ] 模仿学习
     - [ ] 迁移学习
-  - [ ] 基于优化
+  - [x] 基于优化
     - [ ] 轨迹优化
     - [ ] 接触点优化
     - [ ] 力优化
@@ -37,13 +37,14 @@
 
 ### 研究问题
 - 研究背景：
-- 研究目标：
+- 研究目标：提出了一种基于任务导向的灵巧手姿态合成方法，通过量化任务力矩空间（TWS）与抓取力矩空间（GWS）之间的差异，并最小化该差异来优化手部姿态，从而实现针对具体任务（如抓取、旋转、按压等）的高效、精准抓取姿态生成。
 - 主要挑战：
 
 ### 主要方法
 - 技术路线：
-- 创新点：
-- 关键算法：
+- 创新点：具体贡献包括：1）一种快速、准确且可微分的 GWS 边界估计技术；2）基于估计的 GWS 边界与提供的 TWS 边界之间的差异，提出了一种面向任务的目标函数；以及 3）一种高效的综合流水线实现，该流水线利用 CUDA 加速并支持大规模并行化
+- 关键算法：energy？优化包含四个能量项：任务导向、距离能量、渗透和自渗透。
+dexterous grasp synthesis pipeline is built upon **cuRobo** (CUDA Accelerated Robot Library，可用于机器人的运动规划)
 
 ### 实验结果
 - 实验设置：
